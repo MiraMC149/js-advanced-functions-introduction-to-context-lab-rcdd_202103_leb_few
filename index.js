@@ -7,7 +7,7 @@ function createEmployeeRecord(firstName,lastName,title,payPerhour)
   let payPerhour = this.payPerhour;
   let timeInEvents = this.timeInEvents;
   let timeOutEvents = this.timeOutEvents;
-  return person{
+  let person{
     firstName,
     lastName,
     title,
