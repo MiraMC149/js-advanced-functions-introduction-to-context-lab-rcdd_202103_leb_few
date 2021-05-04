@@ -1,21 +1,17 @@
 // Your code here
-function createEmployeeRecord(firstName,lastName,title,payPerhour)
+function createEmployeeRecord(row)
 {
-  let firstName = this.firstName;
-  let lastName = this.familyName;
-  let title = this.title;
-  let payPerhour = this.payPerhour;
-  let timeInEvents = [];
-  let timeOutEvents = [];
-  let person = {
-    firstName,
-    lastName,
-    title,
-    payPerhour,
-    timeInEvents,
-    timeOutEvents
-  }
-  return person;
+  return {
+        firstName: row[0],
+        familyName: row[1],
+        title: row[2],
+        payPerHour: row[3],
+        timeInEvents: [],
+        timeOutEvents: []
+    }
 }
-function createEmployeeRecords(arr)
-{}
+let createEmployeeRecords = function(employeeRowData) {
+    return employeeRowData.map(function(row){
+        return createEmployeeRecord(row)
+    })
+}
