@@ -5,7 +5,7 @@ function createEmployeeRecord(arr)
   let lastName = this.familyName;
   let title = this.title;
   let pay = this.payPerhour;
-  
+
 }
 function createEmployeeRecords(arr)
 {}
