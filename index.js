@@ -13,7 +13,7 @@ function createEmployeeRecord(firstName,lastName,title,payPerhour)
     title,
     payPerhour,
     timeInEvents,
-    timeOutEvents;
+    timeOutEvents
   }
 }
 function createEmployeeRecords(arr)
